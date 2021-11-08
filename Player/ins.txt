@@ -1,0 +1,1 @@
+ตัว player loop ที่ 150ms
