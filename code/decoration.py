@@ -11,7 +11,7 @@ class Sky:
 		self.middle = pygame.image.load('graphics/decoration/sky/sky_middle.png').convert()
 		self.horizon = horizon
 
-		# stretch 
+		# stretch
 		self.top = pygame.transform.scale(self.top,(screen_width,tile_size))
 		self.bottom = pygame.transform.scale(self.bottom,(screen_width,tile_size))
 		self.middle = pygame.transform.scale(self.middle,(screen_width,tile_size))
@@ -21,11 +21,11 @@ class Sky:
 			palm_surfaces = import_folder('graphics/overworld/palms')
 			self.palms = []
 
-			for surface in [choice(palm_surfaces) for image in range(10)]:
-				x = randint(0,screen_width)
-				y = (self.horizon * tile_size) + randint(50,100)
-				rect = surface.get_rect(midbottom = (x,y))
-				self.palms.append((surface,rect))
+			# for surface in [choice(palm_surfaces) for image in range(10)]:
+			# 	x = randint(0,screen_width)
+			# 	y = (self.horizon * tile_size) + randint(50,100)
+			# 	rect = surface.get_rect(midbottom = (x,y))
+			# 	self.palms.append((surface,rect))
 
 			cloud_surfaces = import_folder('graphics/overworld/clouds')
 			self.clouds = []
